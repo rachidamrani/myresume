@@ -88,7 +88,7 @@ li {
 #bio {
   font-weight: 300;
   color: var(--mainTextColor);
-  line-height: 1em;
+  line-height: 2em;
   letter-spacing: 0.25em;
 }
 
@@ -143,6 +143,33 @@ li {
   padding-top: 1em;
 }
 
+@media (max-width: 900px) {
+  #socials--list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #bio {
+    line-height: 2em;
+  }
+}
+
+@media (max-width: 822px) {
+  #user-name {
+    font-size: 2em;
+  }
+  #bio {
+    line-height: 2em;
+  }
+}
+
+@media (max-width: 629px) {
+  #user-name {
+    font-size: 1em;
+  }
+}
+
 @media (max-width: 768px) {
   #wrapper--hero {
     min-height: 200px;
@@ -150,7 +177,7 @@ li {
   }
 
   #user-name {
-    font-size: 1.2em;
+    font-size: 1.9em;
   }
 
   #bio {
@@ -164,7 +191,11 @@ li {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 630px) {
+  #user-name {
+    font-size: 1.5em;
+  }
+
   #wrapper--hero {
     display: flex;
     flex-direction: column;
