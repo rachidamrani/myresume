@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --mainTextColor-light: #000;
+  --secondaryTextColor-light: rgb(51 51 51);
+  --mainLinkColor-light: #0da2b8;
+  --mainBorderColor-light: rgb(218, 218, 218);
+  --mainBgColor-light: rgb(249, 250, 251);
+
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
+
+  --mainTextColor: var(--mainTextColor-dark);
+  --secondaryTextColor: var(--secondaryTextColor-dark);
+  --mainLinkColor: var(--mainLinkColor-dark);
+  --mainBorderColor: var(--mainBorderColor-dark);
+  --mainBgColor: var(--mainBgColor-dark);
+}
+
+* {
+  font-family: 'Readex Pro';
+  line-height: 1.5em;
+  box-sizing: border-box;
+  color: var(--mainTextColor);
+}
+
+body {
+  background-color: var(--mainBgColor);
+}
+
+p,
+span,
+li {
+  color: var(--secondaryTextColor);
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainTextColor);
+  font-weight: 700;
+}
+
+li {
+  line-height: 1.9em;
+  color: var(--mainTextColor);
+}
+
+.fa-sharp {
+  margin-right: 0.2em;
+}
+
+#myphoto {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#container--main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section--page {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#wrapper--hero {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+#user-name {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+#bio {
+  font-weight: 300;
+  color: var(--mainTextColor);
+}
+
+#email {
+  color: var(--mainTextColor);
+}
+
+#socials--list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+
+#socials--list a {
+  transition: color 300ms ease-in;
+  font-size: 1.2em;
+}
+
+#socials--list a i {
+  margin-right: 0.5em;
+}
+
+#socials--list a:hover {
+  color: var(--mainLinkColor);
+}
+
+#qualifications--list {
+  list-style: none;
+}
+
+#wrapper--techstack__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.card--techstack {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
