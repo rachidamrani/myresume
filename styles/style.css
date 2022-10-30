@@ -62,8 +62,11 @@ li {
 }
 
 #container--main {
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2em;
+  border-right: 1px solid var(--mainBorderColor);
+  border-left: 1px solid var(--mainBorderColor);
 }
 
 .section--page {
@@ -79,12 +82,14 @@ li {
 
 #user-name {
   font-size: 3em;
-  line-height: 1em;
+  letter-spacing: 0.25em;
 }
 
 #bio {
   font-weight: 300;
   color: var(--mainTextColor);
+  line-height: 1em;
+  letter-spacing: 0.25em;
 }
 
 #email {
@@ -119,10 +124,75 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+  padding-bottom: 2em;
 }
 
 .card--techstack {
   border: 1px solid var(--mainBorderColor);
   padding: 0.5em 1em;
   border-radius: 5px;
+}
+
+.line-divider {
+  background-color: var(--mainBorderColor);
+  height: 1px;
+}
+
+.self--presentation {
+  display: block;
+  padding-top: 1em;
+}
+
+@media (max-width: 768px) {
+  #wrapper--hero {
+    min-height: 200px;
+    margin: 2em 0;
+  }
+
+  #user-name {
+    font-size: 1.2em;
+  }
+
+  #bio {
+    line-height: 2em;
+  }
+
+  #socials--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 460px) {
+  #wrapper--hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section--page {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0;
+  }
+
+  .section--page h2 {
+    font-size: 1em;
+  }
+
+  #socials--list {
+    font-size: 0.8em;
+    padding: 1em 0;
+  }
+
+  #qualifications--list {
+    font-size: medium;
+    text-align: left;
+  }
+
+  #wrapper--techstack__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
